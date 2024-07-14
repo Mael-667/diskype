@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="nuit.css" />
+	<title>Diskype</title>
+	<link rel="icon" type="image/gif" href="icone.ico" />
+</head>
+
+<body>
+	<div class="user">
+		<img src="" alt="pp" class="avatarent"/>
+		<p class="pseudoent"> </p>
+		<img src="poped.png" alt="" class="icn"/>
+	</div>
+
+	<div class="poped" style="display: none;">
+		<span class="editage">
+			<form method="POST" id="formu" class="edit" enctype="multipart/form-data" onsubmit="return edit(this);">
+				<label class="pp"><img src="" alt="pp" class="avatarent" id="editedaya"/><input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg" class="input" onchange="return change(this);"/></label>
+				<input type="text" name="pseudo" id="pseud" class="input" placeholder="" maxlength="16">
+				<br>
+				<input type="submit" value="Fini" id="inptbtn">
+			</form>
+
+			<form id="formu" class="editt" onsubmit="return deconnection(this);">
+				<input type="submit" value="Deconnection" id="inptbtn">
+			</form>
+		</span>
+	</div>
+
+	<div id="chat">
+		<div id="messages">
+
+		</div>
+	
+		<div class="tst">
+			<div id="nani">
+				<div contenteditable="true" type="text" name="je" id="test" placeholder="Envoyer msg"></div>
+				<div class="conteneur">
+					<div class="mettremote">
+						<div class="conteneuremote" style="display: none;">
+							<div class="nosemotes"></div>
+							<label id="addreac" class="btn"><img src="addreac.png" alt="" id="addemote"><input type="file" name="emote" id="emoted" class="inpute" onchange="return emote(this);"/></label>
+						</div>
+						<label id="emote" class="boutton"><img src="emote.png" alt="" id="plod"> </label>
+					</div>
+					<label id="pload" class="boutton"><img src="upload.png" alt="" id="plod"><input type="file" name="image" id="imagee" class="inpute" onchange="return preview(this);"/></label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="poped" id="uplodfil" style="display: none;">
+		<span class="editage">
+			<form method="POST" id="formu" class="imag" enctype="multipart/form-data" onsubmit="return imager(this);">
+				<label class="uploadent"><p id="previewer"><img src="" alt="" class="uploade" id="uploade"/></p><input type="file" name="image" id="image" class="inpute" onchange="return preview(this);"/></label>
+				<div class="aflex">
+				<input type="text" name="message" id="msgg" class="msgg" placeholder="Envoyer un message (optionnel)">
+				<br>
+				<label class="ptnsamr"><img src="send.png" alt="" id="nvoyer"/><input type="submit" value="Fini" id="inptbtnn"></label>
+				</div>
+			</form>
+		</span>
+	</div>
+
+	<div class="popedit">
+		<img src="delete.png" alt="" class="icnn" id="del"/>
+		<img src="modif.png" alt="" class="icnn" id="modif" style="margin-left: 0.3em;"/>
+	</div>
+
+
+	<script src="script.js"></script>
+</body>
+</html>

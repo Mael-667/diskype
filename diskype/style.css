@@ -1,0 +1,541 @@
+body
+{
+    margin: 0;
+}
+
+#chat
+{
+    margin: auto;
+    width: 55%;
+    box-shadow: 0px 0px 0.4em rgba(0, 0, 0, 0.829);
+    height: 100vh;
+}
+
+#messages
+{
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 94vh;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.image
+{
+    width: 3em;
+    height: 3em;
+    float: left;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+.dupli
+{
+    width: -webkit-fill-available;
+}
+
+.pseudo
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 0.5em;
+}
+
+.date
+{
+    font-size: 0.6em;
+    color: gray;
+    font-weight: lighter;
+}
+
+.msg
+{
+    border-radius: 0.69em;
+    padding: 0.5em;
+    margin: 0.24em;
+    background-color: #161e31;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.836);
+    display: flex;
+}
+
+.editte
+{
+    height: 1em;
+    float: right;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.txt
+{
+    padding: 1px;
+}
+
+.txt:hover
+{
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius: 0.5em;
+    box-shadow: -4px 0px 0px 0px rgba(0, 0, 0, 0.17);
+}
+
+.txt:focus-visible
+{
+    outline: none;
+}
+
+.txtactif
+{
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius: 0.5em;
+    box-shadow: -4px 0px 0px 0px rgba(0, 0, 0, 0.17);
+}
+
+.tst
+{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+}
+
+#nani
+{
+    display: flex;
+    margin: auto;
+    background-color: #0f1422;
+    border-radius: 1em;
+    align-content: center;
+    align-items: center;
+    width: 99%;
+}
+
+#test
+{
+    border: solid 1vh #0f1422;
+    border-radius: 1em;
+    width: -webkit-fill-available;
+    background-color: #0f1422;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+#plod
+{
+    max-height: 4vh;
+    filter: invert(1);
+}
+
+.conteneur
+{
+    display: flex;
+    margin-right: 0.3em;
+}
+
+.mettremote
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contiens
+{
+    display: flex !important;
+    position: absolute;
+    bottom: 5vh;
+    width: 30vh;
+    height: 40vh;
+    background-color: #00000096;
+    backdrop-filter: blur(1px);
+    border-radius: 0.69em;
+    transition: 150ms;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 84%);
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0.3em;
+}
+
+.boutton
+{
+    display: flex;
+    background: none;
+    border: none;
+    max-height: fit-content;
+    width: auto;
+    cursor: pointer;
+    margin-right: 0.1em;
+    transition: 150ms;
+}
+
+.boutton:hover
+{
+    opacity: 0.9;
+    transform: scale(0.95);
+}
+
+.btn
+{
+    display: flex;
+    cursor: pointer;
+}
+
+#addemote
+{
+    filter: invert(1);
+    transition: 150ms;
+}
+
+#addemote:hover
+{
+    opacity: 0.9;
+    transform: scale(0.97);
+}
+
+
+.user
+{
+    float: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px -0.4em 0.4em -0.4em rgba(0, 0, 0, 0.829);
+    width: 22.5%;
+}
+
+.avatarent
+{
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    margin: 0.5em;
+}
+
+#avatar
+{
+    display: none;
+}
+
+.editage
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    min-width: 30%;
+    max-width: 45%;
+    background-color: #ffffff03;
+    backdrop-filter: blur(4px);
+    border-radius: 0.69em;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 84%);
+    padding: 3%;
+}
+
+.upload
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.imagge
+{
+    max-width: 70%;
+    max-height: 40vh;
+    border-radius: 4px;
+}.videoe
+{
+    max-width: 70%;
+    max-height: 40vh;
+    border-radius: 4px;
+}.audioe
+{
+    max-width: 70%;
+    max-height: 40vh;
+}
+
+#uploade
+{
+    max-width: 100%;
+    max-width: 50%;
+}
+
+.edit
+{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    /*background-color: #090e1d;*/
+    border-radius: 1.5em;
+    padding: 2em;
+    margin-bottom: 1em;
+    /*box-shadow: 0px 0px 0.4em rgba(0, 0, 0, 0.829)*/
+}
+
+.editt
+{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    /*background-color: #161e31;*/
+    border-radius: 1.5em;
+    /*box-shadow: 0px 0px 0.4em rgba(0, 0, 0, 0.829)*/
+}
+
+.pp
+{
+    display: block;
+    height: 6em;
+    width: 6em;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.781);
+    cursor: pointer;
+    animation-duration: 100ms;
+}
+
+.pp:hover
+{
+    opacity: 0.7;
+}
+
+#pseud
+{
+    color: #000;
+    border-radius: 2em;
+    border: #000 solid 1px;
+    padding: 0.2em;
+    padding-top: 0.6em;
+}
+
+#pseud::placeholder
+{
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 1.5em;
+    padding-left: 0.2em;
+}
+
+.pseudoent
+{
+    font-size: 1.3em;
+}
+
+.icn
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1em;
+    width: 1em;
+    padding: 0.5em;
+    opacity: 0.7;
+    cursor: pointer;
+    animation-duration: 150ms;
+}
+
+.icnn
+{
+    height: 1em;
+    width: 1em;
+    cursor: pointer;
+    filter: invert(1);
+    transition-duration: 150ms;
+    justify-content: center;
+}
+
+.icnn:hover
+{
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.icn:hover
+{
+    opacity: 1;
+}
+
+.icn:active
+{
+    height: 0.9em;
+    width: 0.9em;
+    padding-right: 0.6em;
+}
+
+.popedit
+{
+    z-index: 0;
+    position: absolute;
+    display: none;
+    background-color: #090e1d;
+    padding: 0.4em;
+    border-radius: 2em;
+    align-items: center;
+}
+
+.onmodif
+{
+    display: flex;
+    padding: 0.5em;
+    background-color: #0000004d;
+    border-radius: 2em;
+}
+
+.poped
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #00000093;
+    top: 0;
+    left: 0;
+}
+
+#inptbtn
+{
+    padding: 0.7em;
+    border-radius: 2em;
+    background-color: rgb(14, 42, 94);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.836);
+    border: solid 1px black;
+}
+
+.imag
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.inpute
+{
+    display: none;
+}
+
+.msgg
+{
+    color: cornsilk;
+    border: 0.2em solid #0f1422;
+    border-radius: 1em;
+    width: -webkit-fill-available;
+    background-color: #0f1422;
+    padding: 0.5em;
+    outline: none;
+}
+
+#inptbtnn
+{
+    display: none;
+}
+
+.aflex
+{
+    display: flex;
+    height: 2em;
+    align-items: center;
+    padding-left: 0.5em;
+}
+
+.ptnsamr
+{
+    display: flex;
+    align-items: center;
+}
+
+#nvoyer
+{
+    height: 1.5em;
+    width: 1.5em;
+    filter: invert(1);
+}
+
+.modifemote
+{
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+.previewemote
+{
+    width: 50%;
+    max-width: 6em;
+    min-width: 1em;
+}
+
+.emotent
+{
+    width: 100%;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.emotent:hover
+{
+    opacity: 0.9;
+}
+
+#em
+{
+    display: none;
+}
+
+.inputem
+{
+    width: 100%;
+    border-radius: 0.2em;
+    border: none;
+}
+
+.inputem:focus
+{
+    outline: none;
+}
+
+#inptemote
+{
+    border: solid 1px #06dee1;
+    border-radius: 0.5em;
+}
+
+.nosemotes
+{
+    overflow-y: auto;
+    width: 100%;
+}
+
+.emote
+{
+    width: 24%;
+    height: auto;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.emote:hover
+{
+    transform: scale(0.95);
+}
+
+.prevemote
+{
+    height: 1.5em;
+    width: auto;
+}
+
+#devine
+{
+    min-width: 5px;
+    min-height: 5px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="accueil.css" />
+    <link rel="stylesheet" href="nuit.css" />
+	<title>Diskype</title>
+	<link rel="icon" type="image/gif" href="icone.ico" />
+</head>
+
+<body>
+    <div class="top">
+        <span class="titre">Bienvenue</span>
+        <form method="POST" id="form" onsubmit="return valide(this);">
+            <p class="formulaire">
+                <label>E-Mail</label><br><input type="email" name="email" id="email" class="input">
+                <br>
+                <label>Mot-de-passe</label><br><input type="password" name="password" id="password" class="input">
+                <br>
+                <input type="submit" value="Créer mon compte" id="nptbtn">
+            </p>
+        </form>
+
+        <form method="POST" id="formu" enctype="multipart/form-data" style="display: none;" onsubmit="return finish(this);">
+            <div class="formulaire">
+                <label class="pp"><span class="solotetsouslo">Modifier votre avatar</span><input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg" class="input" onchange="return change(this);"/></label>
+                <br>
+                <label>Pseudo</label><br><input type="text" name="pseudo" id="pseudo" class="input" maxlength="16">
+                <br>
+                <input type="submit" value="Valider et continuer" id="nptbtn">
+            </div>
+        </form>
+
+    </div>
+
+    <script src="accueil.js"></script>
+</body>

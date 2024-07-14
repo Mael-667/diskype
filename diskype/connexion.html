@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="accueil.css" />
+    <link rel="stylesheet" href="nuit.css" />
+	<title>Diskype</title>
+	<link rel="icon" type="image/gif" href="icone.ico" />
+</head>
+
+<body>
+    <div class="top">
+        <span class="titre">Bon retour</span>
+        <form method="POST" onsubmit="return connect(this);">
+            <p class="formulaire">
+                <label>E-Mail</label><br><input type="email" name="email" id="email" placeholder="" class="input">
+                <br>
+                <label>Mot-de-passe</label><br><input type="password" name="password" id="password" placeholder="" class="input">
+				<br>
+				<input type="submit" value="Envoyer" id="nptbtn">
+            </p>
+        </form>
+    </div>
+
+    <script src="accueil.js"></script>
+    
+</body>
